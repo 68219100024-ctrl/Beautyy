@@ -1,0 +1,337 @@
+หน้า1.
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow & Home - ศูนย์รวมเครื่องสำอางและของใช้ในบ้าน</title>
+    <style>
+        * { box-sizing: border-box; font-family: 'Sarabun', 'Tahoma', sans-serif; margin: 0; padding: 0; }
+        body { background-color: #fcf8f8; color: #333; line-height: 1.6; }
+        
+        /* Header & Navigation */
+        header { background: linear-gradient(135deg, #ff758c, #ff7eb3); color: white; padding: 25px 20px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        header h1 { font-size: 2.2em; margin-bottom: 5px; }
+        nav { background-color: #2c3e50; display: flex; justify-content: center; sticky: top; }
+        nav a { color: white; padding: 15px 25px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        nav a:hover, nav a.active { background-color: #ff758c; }
+
+        /* Hero Banner */
+        .hero { position: relative; background: url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=1200') center/cover; height: 350px; display: flex; align-items: center; justify-content: center; color: white; text-align: center; }
+        .hero-overlay { position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.4); }
+        .hero-content { position: relative; z-index: 1; padding: 20px; }
+        .hero h2 { font-size: 2.5em; margin-bottom: 10px; }
+        .btn { background-color: #ff758c; color: white; padding: 12px 28px; text-decoration: none; border-radius: 25px; font-weight: bold; display: inline-block; margin-top: 15px; border: none; cursor: pointer; transition: 0.3s; }
+        .btn:hover { background-color: #e65c73; transform: translateY(-2px); }
+
+        /* Highlights */
+        .container { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
+        .section-title { text-align: center; margin-bottom: 30px; font-size: 1.8em; color: #d81b60; }
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+        .feature-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); text-align: center; padding-bottom: 20px; }
+        .feature-card img { width: 100%; height: 200px; object-fit: cover; }
+        .feature-card h3 { margin: 15px 0 10px; color: #2c3e50; }
+        .feature-card p { padding: 0 15px; color: #666; font-size: 0.95em; }
+
+        /* Footer */
+        footer { background-color: #2c3e50; color: white; text-align: center; padding: 20px; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Glow & Home Beauty</h1>
+        <p>สินค้าความงามและเครื่องใช้ในบ้าน ครบจบในที่เดียว</p>
+    </header>
+
+    <nav>
+        <a href="q1.html">หน้าแรก</a>
+        <a href="q2.html">หมวดหมู่สินค้า</a>
+        <a href="q3.html" class="active">ติดต่อเรา</a>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2>ต้อนรับความสวยสดใสและความสะดวกสบาย</h2>
+            <p>พบกับโปรโมชั่นลดสูงสุด 50% สำหรับกลุ่มสกินแคร์และอุปกรณ์ทำความสะอาดบ้าน</p>
+            <a href="products.html" class="btn">ช้อปเลยตอนนี้</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">หมวดหมู่แนะนำ</h2>
+        <div class="grid-3">
+            <div class="feature-card">
+                <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=600" alt="สกินแคร์">
+                <h3>หมวดสกินแคร์ & บำรุงผิว</h3>
+                <p>รวมเซรั่ม ครีมกันแดด และมอยส์เจอไรเซอร์คุณภาพสูง เพื่อผิวกระจ่างใสสุขภาพดี</p>
+                <a href="products.html" class="btn">ดูสินค้า</a>
+            </div>
+            <div class="feature-card">
+                <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?q=80&w=600" alt="เครื่องสำอาง">
+                <h3>หมวดเครื่องสำอาง</h3>
+                <p>แต่งเติมสีสันให้ใบหน้าด้วยลิปสติก บลัชออน และรองพื้นเนื้อเนียนบางเบา</p>
+                <a href="products.html" class="btn">ดูสินค้า</a>
+            </div>
+            <div class="feature-card">
+                <img src="https://images.unsplash.com/photo-1583947215259-38e31be8751f?q=80&w=600" alt="ของใช้ในบ้าน">
+                <h3>หมวดของใช้ในบ้าน</h3>
+                <p>อุปกรณ์ทำความสะอาด สเปรย์ปรับอากาศ และของใช้ในครัวเรือนที่ตอบโจทย์ชีวิตยุคใหม่</p>
+                <a href="products.html" class="btn">ดูสินค้า</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+       
+    </footer>
+
+</body>
+
+
+หน้า2.<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow & Home - สินค้าทั้งหมด</title>
+    <style>
+        * { box-sizing: border-box; font-family: 'Sarabun', 'Tahoma', sans-serif; margin: 0; padding: 0; }
+        body { background-color: #fcf8f8; color: #333; line-height: 1.6; }
+
+        header { background: linear-gradient(135deg, #ff758c, #ff7eb3); color: white; padding: 25px 20px; text-align: center; }
+        nav { background-color: #2c3e50; display: flex; justify-content: center; }
+        nav a { color: white; padding: 15px 25px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        nav a:hover, nav a.active { background-color: #ff758c; }
+
+        .container { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
+        .page-header { text-align: center; margin-bottom: 25px; }
+        .page-header h2 { color: #d81b60; font-size: 2em; }
+
+        /* Product Grid */
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 25px; }
+        .product-card { background: white; border-radius: 10px; overflow: hidden; border: 1px solid #eee; box-shadow: 0 3px 10px rgba(0,0,0,0.05); transition: 0.3s; display: flex; flex-direction: column; }
+        .product-card:hover { transform: translateY(-5px); box-shadow: 0 8px 15px rgba(0,0,0,0.1); }
+        .product-img { width: 100%; height: 200px; object-fit: cover; }
+        .product-info { padding: 15px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
+        .tag { display: inline-block; background-color: #ffe0e6; color: #d81b60; padding: 3px 10px; border-radius: 12px; font-size: 0.8em; margin-bottom: 8px; font-weight: bold; }
+        .product-title { font-size: 1.1em; font-weight: bold; margin-bottom: 5px; color: #2c3e50; }
+        .product-desc { font-size: 0.85em; color: #666; margin-bottom: 12px; }
+        .product-price { font-size: 1.2em; color: #e91e63; font-weight: bold; margin-bottom: 10px; }
+        .buy-btn { background-color: #ff758c; color: white; text-align: center; padding: 8px; border-radius: 5px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        .buy-btn:hover { background-color: #d81b60; }
+
+        footer { background-color: #2c3e50; color: white; text-align: center; padding: 20px; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>รายการสินค้าทั้งหมด</h1>
+        <p>คัดสรรสิ่งที่ดีที่สุดเพื่อผิวพรรณและบ้านของคุณ</p>
+    </header>
+
+    <nav>
+        <a href="q1.html">หน้าแรก</a>
+        <a href="q2.html">หมวดหมู่สินค้า</a>
+        <a href="q3.html" class="active">ติดต่อเรา</a>
+    </nav>
+
+    <div class="container">
+        <div class="page-header">
+            <h2>สินค้าขายดีประจำเดือน</h2>
+            <p>มีสินค้ารวมทั้งหมด 6 รายการ</p>
+        </div>
+
+        <div class="product-grid">
+            <!-- สินค้าที่ 1 -->
+            <div class="product-card">
+                <img src="รูปสินค้า1.jpg" class="product-img" alt="ลิปทิ้นต์">
+                <div class="product-info">
+                    <div>
+                        <span class="tag">เครื่องสำอาง</span>
+                        <div class="product-title">ลิปทิ้นต์ sasi sugar rush 2g</div>
+                        <div class="product-desc">ให้สีสวย ชุ่มฉ่ำ สดใส</div>
+                    </div>
+                    <div>
+                        <div class="product-price">฿99</div>
+                        <a href="contact.html" class="buy-btn">สั่งซื้อสินค้า</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- สินค้าที่ 2 -->
+            <div class="product-card">
+                <img src="รูปสินค้า2.jpg" class="product-img" alt="น้ำหอมเลิฟโพชั่น">
+                <div class="product-info">
+                    <div>
+                        <span class="tag">น้ำหอม</span>
+                        <div class="product-title">น้ำหอมเลิฟโพชั่น (Love Potion Lovely Perfume) </div>
+                        <div class="product-desc">กลิ่นชัด หอม ติดทนยาวนาน</div>
+                    </div>
+                    <div>
+                        <div class="product-price">฿159</div>
+                        <a href="contact.html" class="buy-btn">สั่งซื้อสินค้า</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- สินค้าที่ 3 -->
+            <div class="product-card">
+                <img src="รูปสินค้า3.png" class="product-img" alt="ครีมกันแดด">
+                <div class="product-info">
+                    <div>
+                        <span class="tag">สกินแคร์</span>
+                        <div class="product-title">เซรั่มไฮยา (Hyaluronic Acid Serum)</div>
+                        <div class="product-desc">บำรุงผิวหน้าเติมน้ำและกักเก็บความชุ่มชื้นให้ผิวฟูอิ่มน้ำ</div>
+                    </div>
+                    <div>
+                        <div class="product-price">฿490</div>
+                        <a href="contact.html" class="buy-btn">สั่งซื้อสินค้า</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- สินค้าที่ 4 -->
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMRpHqQHzU8l8GLhDstZsipsUp6-8hbAOPlWNkRRSlzZbhjhgQVdX499Q&s=10" class="product-img" alt="สเปรย์หอม">
+                <div class="product-info">
+                    <div>
+                        <span class="tag">ของใช้ในบ้าน</span>
+                        <div class="product-title">สเปรย์หอมปรับอากาศ 320ml</div>
+                        <div class="product-desc">กลิ่นอโรม่าผ่อนคลาย ขจัดกลิ่นอับ ยับยั้งแบคทีเรียในอากาศ</div>
+                    </div>
+                    <div>
+                        <div class="product-price">฿180</div>
+                        <a href="contact.html" class="buy-btn">สั่งซื้อสินค้า</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- สินค้าที่ 5 -->
+            <div class="product-card">
+                <img src="รูปสินค้า5.png" class="product-img" alt="น้ำหอม">
+                <div class="product-info">
+                    <div>
+                        <span class="tag">เครื่องสำอาง</span>
+                        <div class="product-title">รองพื้นเจ้านาง</div>
+                        <div class="product-desc">ให้งานผิวสวย ติดทนยาวนาน</div>
+                    </div>
+                    <div>
+                        <div class="product-price">฿159</div>
+                        <a href="contact.html" class="buy-btn">สั่งซื้อสินค้า</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- สินค้าที่ 6 -->
+            <div class="product-card">
+                <img src="รูปสินค้า4.jpg" class="product-img" alt="น้ำยาทำความสะอาด">
+                <div class="product-info">
+                    <div>
+                        <span class="tag">ของใช้ในบ้าน</span>
+                        <div class="product-title">MAGICLEAN Floor Cleaner น้ำยาถูพื้น มาจิคลีน</div>
+                        <div class="product-desc">ทำความสะอาดที่ช่วยขจัดคราบสกปรก ให้กลิ่นหอม และดูแลรักษาพื้นผิวภายในบ้าน</div>
+                    </div>
+                    <div>
+                        <div class="product-price">฿99</div>
+                        <a href="contact.html" class="buy-btn">สั่งซื้อสินค้า</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
+
+
+
+หน้า3.<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow & Home - ติดต่อเรา</title>
+    <style>
+        * { box-sizing: border-box; font-family: 'Sarabun', 'Tahoma', sans-serif; margin: 0; padding: 0; }
+        body { background-color: #fcf8f8; color: #333; line-height: 1.6; }
+
+        header { background: linear-gradient(135deg, #ff758c, #ff7eb3); color: white; padding: 25px 20px; text-align: center; }
+        nav { background-color: #2c3e50; display: flex; justify-content: center; }
+        nav a { color: white; padding: 15px 25px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        nav a:hover, nav a.active { background-color: #ff758c; }
+
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+        .contact-wrapper { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+
+        /* Contact Info Box */
+        .info-box { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        .info-box h2 { color: #d81b60; margin-bottom: 15px; }
+        .info-item { margin-bottom: 15px; }
+        .info-item strong { color: #2c3e50; display: block; margin-bottom: 3px; }
+        .store-img { width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-top: 15px; }
+
+        /* Form Box */
+        .form-box { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        .form-box h2 { color: #2c3e50; margin-bottom: 15px; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: bold; font-size: 0.9em; }
+        .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 0.95em; }
+        .submit-btn { background-color: #ff758c; color: white; border: none; padding: 12px; width: 100%; border-radius: 6px; font-weight: bold; font-size: 1em; cursor: pointer; transition: 0.3s; }
+        .submit-btn:hover { background-color: #d81b60; }
+
+        footer { background-color: #2c3e50; color: white; text-align: center; padding: 20px; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ติดต่อเรา</h1>
+        <p>ยินดีให้คำปรึกษาและบริการลูกค้าทุกท่าน</p>
+    </header>
+
+    <nav>
+        <a href="q1.html">หน้าแรก</a>
+        <a href="q2.html">หมวดหมู่สินค้า</a>
+        <a href="q3.html" class="active">ติดต่อเรา</a>
+    </nav>
+
+    <div class="container">
+        <div class="contact-wrapper">
+            
+            <!-- รายละเอียดการติดต่อ -->
+            <div class="info-box">
+                <h2>ข้อมูลร้านค้า</h2>
+                
+                
+                <div class="info-item">
+                    <strong>📞 เบอร์โทรศัพท์:</strong>
+                    012-345-6789
+                </div>
+                <div class="info-item">
+                    <strong>💬 Line Official:</strong>
+                    @eiei
+                </div>
+                <div class="info-item">
+                    <strong>⏰ เวลาทำการ:</strong>
+                    เปิดบริการทุกวัน 09:00 - 20:00 น.
+                </div>
+                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=600" class="store-img" alt="บรรยากาศหน้าร้าน">
+            </div>
+
+            
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        
+    </footer>
+
+</body>
+</html>
